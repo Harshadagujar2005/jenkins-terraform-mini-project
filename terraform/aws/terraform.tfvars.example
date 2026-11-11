@@ -1,0 +1,5 @@
+# Copy to terraform.tfvars and edit for a REAL apply (do not commit real secrets; none are stored here)
+use_mock_credentials = false
+aws_region           = "ap-south-1"
+bucket_name          = "mini-cicd-artifacts-yourname-2026"
+ami_id               = "ami-xxxxxxxxxxxxxxxxx" # Amazon Linux 2023 AMI for your region, from the EC2 console
