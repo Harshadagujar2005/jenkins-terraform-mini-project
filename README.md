@@ -10,6 +10,14 @@ Terraform is used in two ways:
 GitHub repo --> Jenkins --> npm test --> docker build --> terraform (AWS plan) --> terraform (Docker apply) --> app on http://localhost:3000
 ```
 
+## Submission links
+| Item | Link |
+|---|---|
+| Demo video | [Watch on Google Drive](https://drive.google.com/file/d/1cLhtho73hcGoMDxkZLIuRqOqtCa9TdxQ/view?usp=sharing) |
+| Project report (PDF) | [`docs/Project_Report.pdf`](docs/Project_Report.pdf) |
+| Presentation | [`docs/CICD_Terraform_Presentation.pptx`](docs/CICD_Terraform_Presentation.pptx) |
+| Screenshots | [`docs/screenshots/`](docs/screenshots/) |
+
 ## Project layout
 | Path | Purpose |
 |---|---|
@@ -19,7 +27,7 @@ GitHub repo --> Jenkins --> npm test --> docker build --> terraform (AWS plan) -
 | `terraform/aws/` | AWS config: S3 bucket, security group, EC2 instance (`main.tf`, `variables.tf`, `outputs.tf`) |
 | `terraform/docker/` | Local deployment config + reusable module in `modules/app_container/` |
 | `jenkins/` | Dockerfile + docker-compose to run Jenkins with Docker, Node and Terraform preinstalled |
-| `docs/` | Screenshot checklist, demo video script, and the short report (`Short_Report.docx`) |
+| `docs/` | Screenshot checklist, demo video script, the project report (`Project_Report.pdf`), the presentation and screenshots |
 
 ## Prerequisites (install once)
 1. **Docker Desktop** (keep it running): https://www.docker.com/products/docker-desktop
